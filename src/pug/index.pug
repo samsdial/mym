@@ -1,5 +1,40 @@
 extends ./base/layout.pug
 
 block content
-    section.container
-        article
+    main.full
+        .slider
+            - for (var x = 0; x < 2; x++)
+                .slick_slide--img(style="background-image: url(http://lorempicsum.com/futurama/1920/400/4)")
+                    .info
+                        .title
+                            h2 Lorem ipsum dolor sit amet.
+                        .subtitle
+                            h4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde officia nemo asperiores delectus facere earum dolore voluptate perferendis.
+                .slick_slide--img(style="background-image: url(http://lorempicsum.com/futurama/1920/400/2)")
+                    .info
+                        .title
+                            h2 Lorem ipsum dolor sit amet.
+                        .subtitle
+                            h4 Lorem ipsum dolor sit 
+    main.full
+        .container
+            .title
+                h3 Titulo
+            .subtitle
+                h4 subtitulo
+            .multi-item
+                - for (var x = 0; x < 10; x++)
+                    .box_service
+                        i.icon
+                        .title
+                            h2 Service Titulo
+                        .paragraf
+                            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ex quae officiis minima recusandae.
+        .container
+            .columns
+                .column.is-one-third
+                    p lorem
+                .column
+                    p lorem
+                .column
+                    p Sergio

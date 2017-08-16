@@ -56,7 +56,7 @@ gulp.task('compile-js', function() {
                 .pipe(browserSync.stream())
 });
 gulp.task('images', function(){
-        return gulp.src('src/images/*')
+        return gulp.src('src/images/**/*')
                 .pipe(imagemin())
                 .pipe(gulp.dest('docs/images/'))
 });
@@ -74,5 +74,6 @@ gulp.task('watch',['browserSync', 'sass'], function() {
     gulp.watch('src/sass/**/*.sass', ['sass']);
     gulp.watch('src/pug/**/*.pug', ['compile-pug']);
     gulp.watch('src/js/**/*.js', ['compile-js']);
+    gulp.watch('src/images/**/*', ['images']);
 });
 

@@ -1,0 +1,57 @@
+
+html *
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+html
+    font-size: 62.5%
+*, *:before, *:after
+    box-sizing: inherit
+body
+    width: 100vw
+    font-size: 1.5rem
+    font-family: $primary-font
+    position: relative
+    padding: 0
+    margin: 0
+    overflow-x: hidden
+a
+    text-decoration: none
+    transition: all 0.3s ease-in-out
+img
+    max-width: 100%
+
+input, textarea, select
+    font-family: $primary-font
+    font-size: 1.6rem
+
+p
+    font-family: $primary-font
+    font-weight: 400
+    color: $gray
+    line-height: 25px
+h1, h2, h3, h4, h5, h6, p
+    margin: 0
+    padding: 0
+    font-weight: normal
+// mixing
+$pixelBase: 20
+=font-size($sizeValue: 1.6)
+  font-size: ($sizeValue * 10) + px
+  font-size: (($sizeValue * 10) / $pixelBase) + vh
+
+h1
+    +font-size(3.2+1.5)
+h2
+    +font-size(2.8+1.5)
+h3
+    +font-size(2.4+1.5)
+h4
+    +font-size(2+1.5)
+h5
+    +font-size(1.6+1.5)
+h6
+    +font-size(1.2+1.5)
+h1
+    color: gray
+ul, ol
+    padding-left: 19px

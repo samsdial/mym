@@ -1,0 +1,79 @@
+// mixing
+$pixelBase: 16
+=font-size($sizeValue: 1.6)
+  font-size: ($sizeValue * 10) + px
+  font-size: (($sizeValue * 10) / $pixelBase) + rem
+
+=w-size($sizeValue: 0.6)
+  width: (($sizeValue * 1) / $pixelBase) + em
+
+=h-size($sizeValue: 1.6)
+  height: (($sizeValue * 1) / $pixelBase) + em
+
+//after o before img
+=afterimg
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 100%
+    display: inline-block
+    text-align: center
+    +MQ(M)
+      background-size: contain
+=rotate($rotateValue: 0)
+  transform: rotate($rotateValue + deg)
+
+=point($canvas)
+    @media screen and (min-width: $value) { @content; }
+
+//Mediaqueri
+=MQ($canvas)
+    @if $canvas == XS
+        @media only screen and (min-width: $XS) { @content; }
+    @else if $canvas == S
+        @media only screen and (min-width: $S) { @content; }
+
+    @else if $canvas == M
+        @media only screen and (min-width: $M) { @content; }
+
+    @else if $canvas == L
+        @media only screen and (min-width: $L) { @content; }
+
+//Boton fantasma
+=column($percentage, $float-direction:left)
+    width: 100% * $percentage
+    float: $float-direction
+
+//Boton fantasma
+=btnGhost
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 1000
+  text-indent: 200%
+  white-space: nowrap
+  font-size: 0
+  opacity: 0
+
+//Boton estados
+=press
+  &:hover, &:active, &:focus
+    @content
+
+// Heading site
+=heading
+    h2, h3, h4, h5, h6, p, b, small
+        @content
+
+=clearfix-after
+  clear: both
+
+=font-smoothing
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+=center
+  display: flex
+  justify-content: center
+  align-items: center

@@ -15,13 +15,15 @@ block content
                         .title
                             h2 Lorem ipsum dolor sit amet.
                         .subtitle
-                            h4 Lorem ipsum dolor sit 
+                            h4 Lorem ipsum dolor sit
     main.full
         .container
-            .title
-                h3 Titulo
-            .subtitle
-                h4 subtitulo
+            .row
+                .column
+                    .title
+                        h3 Servicios de Laboratorio Clinico
+                    .paragraf
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat rerum blanditiis ab iusto possimus enim aliquid deserunt? Magnam, placeat ullam eius, cumque magni consectetur, numquam dolorum hic perspiciatis temporibus dolorem!
             .multi-item
                 - for (var x = 0; x < 10; x++)
                     .box_service
@@ -30,11 +32,65 @@ block content
                             h2 Service Titulo
                         .paragraf
                             p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ex quae officiis minima recusandae.
+            .row
+                .column
+                    .title
+                        h3 Servicios de seguridad
+                    .paragraf
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat rerum blanditiis ab iusto possimus enim aliquid deserunt? Magnam, placeat ullam eius, cumque magni consectetur, numquam dolorum hic perspiciatis temporibus dolorem!
+            .multi-item
+                - for (var x = 0; x < 10; x++)
+                    .box_service
+                        i.icon
+                        .title
+                            h2 Examen
+                        .paragraf
+                            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ex quae officiis minima recusandae.
+    main.full.bgc_rgba--blue
         .container
-            .columns
-                .column.is-one-third
-                    p lorem
-                .column
-                    p lorem
-                .column
-                    p Sergio
+            .row
+                .column.txt_center
+                    .title
+                        h2 Somos lo que somos
+                    .paragraf
+                        h4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam et quod sunt culpa, incidunt molestiae adipisci excepturi, dolores numquam magni error harum aperiam fuga ducimus dolorum perspiciatis officia, nobis explicabo.
+    main.full
+        .container
+            .row
+                .column.txt_center
+                    .title
+                        h2 Somos lo que somos
+                    .paragraf
+                        h4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam et quod sunt culpa, incidunt molestiae adipisci excepturi, dolores numquam magni error harum aperiam fuga ducimus dolorum perspiciatis officia, nobis explicabo.
+            .promo-item
+                - for (var x = 0; x < 10; x++)
+                    .box_service
+                        figure
+                            img(href="http://lorempicsum.com/futurama/400/400/2")
+                        .title
+                            h2 Examen
+                        .paragraf
+                            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ex quae officiis minima recusandae.
+    main.full.bgc_rgba--blue
+        .container
+            .row
+                .column.txt_center
+                    .title
+                        h2 Objetivos de calidad
+            .multi-item
+                - for (var x = 0; x < 10; x++)
+                    .box_service
+                        i.icon
+                        .title
+                            h2 Examen
+                        .paragraf
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ex quae officiis minima recusandae.
+    main.full
+        .container
+            .row
+                .column.column-min
+                    h3 prueba
+                .column.column-min
+                    h3 prueba 2
+                .column.column-min
+                    h3 prueba 2

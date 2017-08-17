@@ -36,38 +36,36 @@
             margin: 0
 .slick-prev,
 .slick-next
-    top: inherit
-    bottom: 16px
     width: auto
     height: auto
     z-index: 5
+    @media (min-width: 0px) and (max-width: 449px)
+        bottom: 5%
+        top: inherit
 .slick-prev
-    left: 6px
+    left: 40%
     +MQ(S)
-        left: 40%
-    +MQ(M)
-        left: 47%
+        left: 3%
+
     &:before
-        content: '<'
-        font-family: serif
+        content: '\f053'
+        font-family: 'icomoon' !important
         speak: none
         font-style: normal
         font-weight: normal
         font-variant: normal
         text-transform: none
-        font-size: 45px
+        font-size: 25px
 .slick-next
-    right: 6%
+    right: 40%
     +MQ(S)
-        right: 40%
-    +MQ(M)
-        right: 47%
+        right: 3%
     &:before
-        content: ">"
-        font-family: serif
+        content: "\f054"
+        font-family: 'icomoon' !important
         speak: none
         font-style: normal
         font-weight: normal
         font-variant: normal
         text-transform: none
-        font-size: 45px
+        font-size: 25px

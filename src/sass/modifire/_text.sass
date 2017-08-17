@@ -5,13 +5,20 @@
     display: block
 .subtitle
     &_into
-        &:before
+        &:after
             content: ""
-            width: 50px
-            height: 2px
+            width: 100px
+            height: 5px
             display: block
-            background-color: $blue
+            margin-top: 5px
             margin-bottom: 12px
+            border-radius: 12px
+        &.white:after
+            background-color: $white
+        &.blue:after
+            background-color: $blue
+        &.darkblue:after
+            background-color: $darkBlue
 .title
     span
         display: inline-block
@@ -38,9 +45,24 @@
             text-shadow: 0px 2px 2px $black
     &_size
         &--em
+            &2
+                +heading
+                    font-size: 2vh
             &3
-                font-size: 3rem
+                +heading
+                    font-size: 3vh
             &4
-                font-size: 4rem
+                +heading
+                    font-size: 4vh
+            &5
+                +heading
+                    font-size: 5vh
+            &6
+                +heading
+                    font-size: 6vh
             &8
-                font-size: 8rem
+                +heading
+                    font-size: 8vh
+            &16
+                +heading
+                    font-size: 16vh

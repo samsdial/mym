@@ -3,7 +3,8 @@
     &_wrapper
         width: 100%
         z-index: 1000
-        background-color: blue
+        background-color: transparent
+        position: fixed
         header
             position: relative
             padding: 0
@@ -11,23 +12,26 @@
             width: 100%
             .container
                 padding: 13px 12px 0px 12px
+                vertical-align: middle
 .column
     &_brand,
     &_nav
         display: inline-block
         vertical-align: bottom
-        padding: 12px 5px 0px
+        padding: 0px 5px
         text-align: right
+        vertical-align: middle
     &_brand
-        width: 20%
+        width: 13%
         padding-bottom: 12px
+        text-align: center
         
     &_nav
         width: 100%
         +MQ(S)
             width: 86%
         +MQ(M)
-            width: 76%
+            width: 84%
 nav
     .nav
         &--site
@@ -73,10 +77,30 @@ nav
                     display: block
                     cursor: pointer
                     padding: 15px
-                    font-size: 13px
+                    font-size: 1em
                     position: relative
+                    font-weight: 700
+                    +MQ(S)
+                        font-size: .9em
+                    +MQ(M)
+                        font-size: .75em
+                    +MQ(L)
+                        font-size: .9em
                     +press
-                        color: silver
+                        color: $yellow
+                        &:before
+                            background-color: $yellow
+                            width: 100%
+                    &:before
+                        content: ""
+                        width: 0%
+                        height: 5px
+                        background-color: transparent
+                        display: block
+                        position: absolute
+                        top: -35px
+                        left: 0
+                        transition: all .7s ease-in-out
 .nav_trigger
     display: inline-block
     padding-bottom: 10px
@@ -117,7 +141,7 @@ nav
             transform: translateY(6px)
 .nav-is-visible
     .nav--site
-        background-color: silver
+        background-color: $blue
         transform: translateX(0)
     .nav_trigger
         span

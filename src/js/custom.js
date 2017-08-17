@@ -17,7 +17,8 @@ $(function(){
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 5,
-        arrows: false,
+        dots: true,
+        arrows: true,
         autoplay: true,
         autoplaySpeed: 2000,
         responsive: [

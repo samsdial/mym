@@ -16,7 +16,7 @@ block content
                             h2  Lorem ipsum dolor sit amet.
                         .subtitle.cl--white.txt_size--em2
                             h4 Lorem ipsum dolor sit
-    main.full.bgc--slate.pd_bottom--x40.pd_top--x40
+    main.full.bgc--slate.pd_site
         .container
             .row.mg_bottom--x30
                 .column
@@ -24,7 +24,6 @@ block content
                         h2 Servicios de Laboratorio Clinico
                     .paragraf.cl--darkblue
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat rerum blanditiis ab iusto possimus enim aliquid deserunt? Magnam, placeat ullam eius, cumque magni consectetur, numquam dolorum hic perspiciatis temporibus dolorem!
-            
             .multi-item
                 - for (var x = 0; x < 10; x++)
                     .box_service.cl--darkblue
@@ -33,9 +32,9 @@ block content
                             h2 Prueba Clinica Quimica
                         .paragraf
                             p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ex quae officiis minima recusandae.
-    main.full.bgc--aqua.pd_bottom--x40.pd_top--x40
+    main.full.bgc--aqua.pd_site
         .container
-            .row
+            .row.mg_bottom--x30
                 .column
                     .subtitle.subtitle_into.darkblue.cl--darkblue.txt_size--em4.txt_upper
                         h3 Servicios de seguridad
@@ -43,52 +42,55 @@ block content
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat rerum blanditiis ab iusto possimus enim aliquid deserunt? Magnam, placeat ullam eius, cumque magni consectetur, numquam dolorum hic perspiciatis temporibus dolorem!
             .multi-item
                 - for (var x = 0; x < 10; x++)
-                    .box_service
-                        i.icon
-                        .title.cl--darkblue.txt_size--em3
+                    .box_service.cl--darkblue
+                        i.icon.icon-examen.icon-text.icon_size--vh5
+                        .title.cl--darkblue.txt_size--em3.mg_bottom--x10.mg_top--x10
                             h2 Examen
                         .paragraf
                             p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ex quae officiis minima recusandae.
-    main.full.bgc_rgba--blue
+    main.full.bg_grad--lightblue.pd_site
         .container
-            .row
+            .row.mg_bottom--x30
                 .column.txt_center
-                    .title
-                        h2 Somos lo que somos
-                    .paragraf
+                    .title.cl--white.txt_size--em4.subtitle_into--center.white.txt_upper
+                        h2 Somos lo que tu empresa necesita para apoyarte en seguridad y salud en el trabajo
+                    .paragraf.cl--white.txt_size--em3
                         h4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam et quod sunt culpa, incidunt molestiae adipisci excepturi, dolores numquam magni error harum aperiam fuga ducimus dolorum perspiciatis officia, nobis explicabo.
-    main.full
+    main.full.bgc--slate.pd_site
         .container
-            .row
-                .column.txt_center
-                    .title
-                        h2 Somos lo que somos
-                    .paragraf
-                        h4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam et quod sunt culpa, incidunt molestiae adipisci excepturi, dolores numquam magni error harum aperiam fuga ducimus dolorum perspiciatis officia, nobis explicabo.
+            .row.mg_bottom--x20
+                .column
+                    .title.cl--darkblue.txt_size--em4.subtitle_into.darkblue.txt_upper
+                        h2 Promociones
             .promo-item
                 - for (var x = 0; x < 10; x++)
-                    .box_service
+                    .box_promo
                         figure
-                            img(href="http://lorempicsum.com/futurama/400/400/2")
-                        .title
-                            h2 Examen
-                        .paragraf
-                            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ex quae officiis minima recusandae.
-    main.full.bgc_rgba--blue
+                            img(src="../images/promo/one.jpg")
+                            figcaption
+                                .date.cl--gray.mg_bottom--x10.txt_upper
+                                    small Enero 17 Marzo
+                                .info
+                                    .title.cl--darkblue.txt_size--em3.mg_bottom--x20.txt_capital.txt_upper
+                                        h2 Mes de Noviembre
+                                    .paragraf.mg_bottom--x20
+                                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel aperiam beatae, odit incidunt quisquam dolor.
+
+    main.full.bgc--darkblue.pd_site
         .container
-            .row
+            .row.mg_bottom--x20
                 .column.txt_center
-                    .title
+                    .title.cl--white.txt_size--em4.subtitle_into--center.white.txt_upper
                         h2 Objetivos de calidad
-            .multi-item
+            .quality-item
                 - for (var x = 0; x < 10; x++)
-                    .box_service
-                        i.icon
-                        .title
+                    .box_quality.txt_center
+                        i.icon.icon-examen.icon-text.icon_size--vh5
+                        .title.cl--white.txt_size--em4
                             h2 Examen
-                        .paragraf
+                        .paragraf.cl--white
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ex quae officiis minima recusandae.
-    main.full
+    main.full.bgc--darkblue
         .container
             .row
                 .column.column-min

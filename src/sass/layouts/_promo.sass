@@ -1,0 +1,69 @@
+.promo-item
+    .box_promo
+        figure
+            position: relative
+            overflow: hidden
+            margin: 5px
+            background-color: $white
+            border-radius: 5px
+            img
+                position: relative
+                display: block
+                width: 100%
+                height: 25vh
+                opacity: 1
+                transition: all 0.3s ease-in-out
+            figcaption
+                z-index: 11
+                padding: 15px 20px
+                width: 100%
+                height: 100%
+                .date
+                    opacity: 0
+                    transition: opacity 0.3s
+                    transform: translateY(-50px)
+                    transition: all 0.3s ease-in-out
+                .info
+                    transform: translateY(-25px)
+                    transition: all 0.3s ease-in-out
+        +press
+            figure
+                img
+                    height: 27VH
+                    opacity: .5
+                figcaption
+                    .date
+                        opacity: 1
+                        transform: translateY(0px)
+                    .info
+                        transform: translateY(0px)
+.promo-item
+    .slick-prev,
+    .slick-next
+        width: auto
+        height: auto
+        z-index: 5
+        @media (min-width: 0px) and (max-width: 1023px)
+            bottom: -20%
+            top: inherit
+        &:before
+            font-family: 'icomoon' !important
+            speak: none
+            font-style: normal
+            font-weight: normal
+            font-variant: normal
+            text-transform: none
+            font-size: 35px
+            color: $lightBlue
+    .slick-prev
+        left: 40%
+        +MQ(M)
+            left: -6%
+        &:before
+            content: '\f053'
+    .slick-next
+        right: 40%
+        +MQ(M)
+            right: -6%
+        &:before
+            content: "\f054"

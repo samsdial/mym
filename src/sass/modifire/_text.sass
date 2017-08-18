@@ -19,6 +19,20 @@
             background-color: $blue
         &.darkblue:after
             background-color: $darkBlue
+    &_into--center
+        &:after
+            content: ""
+            width: 100px
+            height: 5px
+            display: block
+            border-radius: 12px
+            margin: 5px auto 12px auto
+        &.white:after
+            background-color: $white
+        &.blue:after
+            background-color: $blue
+        &.darkblue:after
+            background-color: $darkBlue
 .title
     span
         display: inline-block
@@ -34,8 +48,12 @@
         text-align: center
     &_upper
         text-transform: uppercase
+        +heading
+            text-transform: uppercase
     &_capital
         text-transform: capitalize
+        +heading
+            text-transform: uppercase
     &_right
         text-align: right
     &_shadow

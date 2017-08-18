@@ -6,3 +6,32 @@
         text-align: center
         border-radius: 5px
         box-shadow: 0 1px 5px rgba($black, .05)
+    .slick-prev,
+    .slick-next
+        width: auto
+        height: auto
+        z-index: 5
+        @media (min-width: 0px) and (max-width: 1023px)
+            bottom: -20%
+            top: inherit
+        &:before
+            font-family: 'icomoon' !important
+            speak: none
+            font-style: normal
+            font-weight: normal
+            font-variant: normal
+            text-transform: none
+            font-size: 35px
+            color: $lightBlue
+    .slick-prev
+        left: 40%
+        +MQ(M)
+            left: -6%
+        &:before
+            content: '\f053'
+    .slick-next
+        right: 40%
+        +MQ(M)
+            right: -6%
+        &:before
+            content: "\f054"

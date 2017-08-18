@@ -15,9 +15,9 @@ $(function(){
     // slider slick home
     $('.multi-item').slick({
         infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        dots: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        dots: false,
         arrows: true,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -28,7 +28,7 @@ $(function(){
             slidesToShow: 2,
             slidesToScroll: 2,
             infinite: true,
-            dots: true
+            dots: false
           }
         },
         {
@@ -37,7 +37,7 @@ $(function(){
             slidesToShow: 2,
             slidesToScroll: 2,
             infinite: true,
-            dots: true
+            dots: false
           }
         },
         {
@@ -53,7 +53,7 @@ $(function(){
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-        arrows: false,
+        arrows: true,
         autoplay: true,
         autoplaySpeed: 2000,
         responsive: [
@@ -63,7 +63,7 @@ $(function(){
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: true
+            dots: false
           }
         },
         {
@@ -72,7 +72,41 @@ $(function(){
             slidesToShow: 1,
             slidesToScroll: 1,
             infinite: true,
-            dots: true
+            dots: false
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }]
+    });
+    $('.quality-item').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 950,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false
           }
         },
         {

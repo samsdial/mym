@@ -1,0 +1,26 @@
+// buttons
+.btn
+    border: none
+    box-shadow: none
+    border-radius: none
+    font-size: 1.4rem
+    font-family: $primary-font
+    padding: 0.8em 2.2em
+    display: block
+    cursor: pointer
+    font-weight: 600
+    -webkit-appearance: inherit
+    transition: all 0.3s ease-in-out
+    &--full
+        width: 100%
+        display: block
+    &_site
+        background-color: $cyan
+        border-bottom: 2px solid $darkBlue
+        color: $white
+        text-align: center
+        text-transform: uppercase
+        +press
+            background-color: $yellow
+            border-bottom: 2px solid $darkYellow
+            color: $black

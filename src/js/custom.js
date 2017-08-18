@@ -69,8 +69,8 @@ $(function(){
         {
           breakpoint: 950,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
+            slidesToShow: 2,
+            slidesToScroll: 2,
             infinite: true,
             dots: false
           }
@@ -85,11 +85,10 @@ $(function(){
     });
     $('.quality-item').slick({
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        arrows: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        arrows: false,
+        autoplay: false,
         responsive: [
         {
           breakpoint: 1024,
@@ -97,7 +96,7 @@ $(function(){
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: false
+            arrows: true
           }
         },
         {
@@ -106,7 +105,7 @@ $(function(){
             slidesToShow: 1,
             slidesToScroll: 1,
             infinite: true,
-            dots: false
+            arrows: true
           }
         },
         {

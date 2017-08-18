@@ -83,19 +83,86 @@ block content
                     .title.cl--white.txt_size--em4.subtitle_into--center.white.txt_upper
                         h2 Objetivos de calidad
             .quality-item
-                - for (var x = 0; x < 10; x++)
-                    .box_quality.txt_center
-                        i.icon.icon-examen.icon-text.icon_size--vh5
-                        .title.cl--white.txt_size--em4
-                            h2 Examen
-                        .paragraf.cl--white
+                - for (var x = 0; x < 5; x++)
+                    .box_quality.cl--white.txt_center
+                        i.icon.icon-time.icon-text.icon_size--vh5
+                        .title.txt_size--em4.mg_bottom--x10.mg_top--x10
+                            h2 Examen title
+                        .paragraf
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ex quae officiis minima recusandae.
-    main.full.bgc--darkblue
+                    .box_quality.cl--white.txt_center
+                        i.icon.icon-time.icon-chat.icon_size--vh5
+                        .title.txt_size--em4.mg_bottom--x10.mg_top--x10
+                            h2 Examen
+                        .paragraf
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ex quae officiis minima recusandae.
+    main.full.bgc--slate.pd_site
         .container
             .row
-                .column.column-min
-                    h3 prueba
-                .column.column-min
-                    h3 prueba 2
-                .column.column-min
-                    h3 prueba 2
+                .column
+                    .subtitle.subtitle_into.darkblue.cl--darkblue.txt_size--em4.txt_upper
+                        h2 Nuestra Organización
+    
+    main.full.pd_site
+        .container.company
+            .row.mg_bottom--x50
+                .column.column-middle.txt_right.mg_top--x30
+                    figure.company
+                        img(src="/images/company/aboutus.jpg")
+                .column.column-middle
+                    .title.cl--cyan.txt_size--em3.mg_bottom--x10
+                        h2 Reseña Historica
+                    .paragraf.cl--darkblue.txt_size--em2
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde laborum consequatur neque sequi, voluptatum ullam deleniti maxime quod ad omnis.
+    main.full.bgc--slate.pd_site
+        .container.company            
+            .row.mg_bottom--x50
+                .column.column-middle.txt_right
+                    .title.cl--cyan.txt_size--em3.mg_bottom--x10
+                        h2 infraestructura
+                    .paragraf.cl--darkblue.txt_size--em2
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem facilis eligendi voluptas at doloremque adipisci!
+                    a.btn.btn_site.mg_btn(href="#") leer más
+                .column.column-middle.mg_top--x30
+                    figure.company
+                        img(src="/images/company/infraestructure.jpg")
+    main.full.bgc--darkblue.pd_site
+        .container.txt_center
+            .title.cl--white.txt_upper.txt_size--em4
+                h2 Recuerda
+    main.full.bgc--slate.pd_site
+        .container.txt_center
+            .paragraf.cl--darkblue.txt_size--em2
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, magni quos aliquid iure facilis, vero?
+    main.full.bgc--white.pd_site
+        .container
+            .row.mg_top--x50.mg_bottom--x50
+                .column.column-middle.txt_center
+                    .subtitle.subtitle_into--center.cyan.cl--cyan.txt_size--em3.mg_bottom--x20
+                        h2 Misión
+                    .paragraf.cl--darkblue.txt_size--em2.mg_bottom--x20
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem distinctio molestias fuga earum blanditiis perferendis.
+                .column.column-middle.txt_center
+                    .subtitle.subtitle_into--center.cyan.cl--cyan.txt_size--em3.mg_bottom--x20
+                        h2 Visión
+                    .paragraf.cl--darkblue.txt_size--em2.mg_bottom--x20
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem distinctio molestias fuga earum blanditiis perferendis.
+                        
+    main.full.bgc--darkblue.pd_site
+        .container.txt_center
+            .title.cl--white.txt_upper.txt_size--em4
+                h2 Contacto
+    main.full.bgc--aqua.pd_site
+        .container
+            .row
+                .column.column-middle.bgc--white.pd_box--x40
+                    .subtitle.cl--darkblue
+                        h2 Contacto
+                    form#contact
+                        .data.affair.error
+                            input.contac_input(type="text", placeholder="Tipo de Contacto")
+                        .data.fullName.error
+                            input.contac_input(type="text", placeholder="Nombre completo")
+                .column.column-middle.pd_box--x40
+                    span.circle.circle--min.bgc--darkblue.cl--white
+                        i.icon.icon-sedep

@@ -1,0 +1,79 @@
+fieldset
+    border: none
+
+input,
+textarea
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder,
+    &:-moz-placeholder,
+    &:placeholder
+        color: $slate
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+    border: none
+    -webkit-text-fill-color: $blue
+    -webkit-box-shadow: 0 0 0px 1000px $white inset
+    transition: background-color 5000s ease-in-out 0s
+
+
+
+input,
+textarea
+    width: 100%
+    display: inline-block
+
+input[type="text"],
+textarea
+    background: $slate
+    border: none
+    margin-bottom: 15px
+    padding: 2vh 12px
+    text-transform: uppercase
+    -webkit-appearance: none
+    transition: all 0.3s ease-in-out
+    +press
+        background-color: rgba($white, .5)
+        outline: none
+
+.data
+    overflow: hidden    
+label
+    width: 100%
+    display: inline-block
+    margin-bottom: 15px
+    +font-size(3.9)
+
+.name,
+.name--message,
+.data--message
+    &.error
+        label
+            position: relative
+            font-weight: 700
+            color: $blue
+            &:before
+                position: absolute
+                top: 0
+                right: 0
+                font-size: .7em
+                color: red
+                font-weight: 700
+                text-decoration: underline
+.name
+    &.error
+        label
+            &:before
+                content: "Escriba su nombre."
+.name--message
+    &.error
+        label
+            &:before
+                content: "Escriba su nombre."
+.data--message
+    &.error
+        label
+            &:before
+                content: "No olvide el mensaje."

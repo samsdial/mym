@@ -1,6 +1,7 @@
 fieldset
     border: none
 
+select,
 input,
 textarea
     &::-webkit-input-placeholder,
@@ -18,15 +19,16 @@ input:-webkit-autofill:focus
     -webkit-box-shadow: 0 0 0px 1000px $white inset
     transition: background-color 5000s ease-in-out 0s
 
-
-
-input,
-textarea
-    width: 100%
-    display: inline-block
-
-input[type="text"],
-textarea
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+input:not([type]),
+textarea,
+select
     background: $slate
     border: none
     margin-bottom: 15px
@@ -34,12 +36,39 @@ textarea
     text-transform: uppercase
     -webkit-appearance: none
     transition: all 0.3s ease-in-out
+    width: 92%
+    display: inline-block
+    color: $gray
     +press
         background-color: rgba($white, .5)
         outline: none
 
+select
+    // background:  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="%39657E" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat
+    // padding-right: 3.0rem
+.data.select
+    position: relative
+    &:after
+        content: "\f078"
+        font-family: 'icomoon' !important
+        speak: none
+        font-style: normal
+        font-weight: normal
+        font-variant: normal
+        text-transform: none
+        font-size: 12px
+        color: $blue
+        position: absolute
+        top: 29%
+        right: 6%
+    &:focus
+        &:after
+            color: $slate
+
+textarea
+    min-height: 6.5rem
 .data
-    overflow: hidden    
+    overflow: hidden
 label
     width: 100%
     display: inline-block

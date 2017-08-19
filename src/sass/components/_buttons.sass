@@ -10,9 +10,13 @@
     cursor: pointer
     font-weight: 600
     -webkit-appearance: inherit
-    transition: all 0.3s ease-in-out
+    transition: $motion
+    &--float
+        position: absolute
+        top: 0
+        right: 0
     &--full
-        width: 100%
+        width: 84%
         display: block
     &_site
         background-color: $cyan

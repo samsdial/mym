@@ -1,0 +1,20 @@
+footer
+    display: block
+    .list
+        li
+            a
+                color: $white
+                font-weight: 700
+                font-size: 1.5vh
+                span.circle
+                    background-color: rgba($white, 0.7)
+                    color: $darkBlue
+                    opacity: 0.5
+                    transition: $motion
+                +press
+                    color: $yellow
+                    span.circle
+                        background-color: rgba($white, 1)
+                        opacity: 1
+    small
+        color: rgba($white, 0.3)

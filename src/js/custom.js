@@ -4,6 +4,35 @@ $(function(){
     $('.nav_trigger').on('click', function(){
         $('header').toggleClass('nav-is-visible');
     });
+    // Animation menu click
+    $(function() {
+      var $target, targetOffset, url;
+      $('.nav ul li a[href*=#]').click(function() {
+        var $target, targetOffset;
+        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+          $target = $(this.hash);
+          $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+          if ($target.length) {
+            targetOffset = $target.offset().top - 80;
+            $('html,body').animate({
+              scrollTop: targetOffset
+            }, 1000);
+            return false;
+          }
+        }
+      });
+      url = window.location.href.split('#');
+      if (window.location.href[1]) {
+        $target = $('#' + url[1]);
+        if ($target.length) {
+          targetOffset = $target.offset().top - 80;
+          $('html,body').animate({
+            scrollTop: targetOffset
+          }, 1000);
+          return false;
+        }
+      }
+    });
     // slider slick home
     $('.slider').slick({
         dots: true,

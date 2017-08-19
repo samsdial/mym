@@ -43,13 +43,13 @@
           </div>
           <div class="column_nav">
             <nav class="nav">
-                  <ul class="nav--site">
-                    <li><a href="#">Laboratorio Clinico</a></li>
-                    <li><a href="#">Seguridad y Salud en el Trabajo</a></li>
-                    <li><a href="#">Promociones</a></li>
-                    <li><a href="#">Nuestra Organización</a></li>
-                    <li><a href="#">Contacto</a></li>
-                  </ul>
+              <ul class="nav--site">
+                    <li><a href="#lab">Laboratorio Clinico</a></li>
+                    <li><a href="#service">Seguridad y Salud en el Trabajo</a></li>
+                    <li><a href="#promo">Promociones</a></li>
+                    <li><a href="#company">Nuestra Organización</a></li>
+                    <li><a href="#about">Contacto</a></li>
+              </ul>
             </nav>
           </div><a class="nav_trigger" href="#0">Menu<span></span></a>
         </div>
@@ -99,7 +99,7 @@
         </div>
       </div>
     </main>
-    <main class="full bgc--slate pd_site">
+    <main class="full bgc--slate pd_site" id="lab">
       <div class="container">
         <div class="row mg_bottom--x30">
           <div class="column">
@@ -195,7 +195,7 @@
         </div>
       </div>
     </main>
-    <main class="full bgc--aqua pd_site">
+    <main class="full bgc--aqua pd_site" id="service">
       <div class="container">
         <div class="row mg_bottom--x30">
           <div class="column">
@@ -305,7 +305,7 @@
         </div>
       </div>
     </main>
-    <main class="full bgc--slate pd_site">
+    <main class="full bgc--slate pd_site" id="promo">
       <div class="container">
         <div class="row mg_bottom--x20">
           <div class="column">
@@ -561,7 +561,7 @@
         </div>
       </div>
     </main>
-    <main class="full bgc--slate pd_site">
+    <main class="full bgc--slate pd_site" id="company">
       <div class="container">
         <div class="row">
           <div class="column">
@@ -590,7 +590,7 @@
       </div>
     </main>
     <main class="full bgc--slate pd_site">
-      <div class="container company">           
+      <div class="container company">
         <div class="row mg_bottom--x50">
           <div class="column column-middle txt_right">
             <div class="title cl--cyan txt_size--em3 mg_bottom--x10">
@@ -642,7 +642,7 @@
         </div>
       </div>
     </main>
-    <main class="full bgc--darkblue pd_site">
+    <main class="full bgc--darkblue pd_site" id="about">
       <div class="container txt_center">
         <div class="title cl--white txt_upper txt_size--em4">
           <h2>Contacto</h2>
@@ -652,23 +652,93 @@
     <main class="full bgc--aqua pd_site">
       <div class="container">
         <div class="row">
-          <div class="column column-middle bgc--white pd_box--x40">
-            <div class="subtitle cl--darkblue">
-              <h2>Contacto</h2>
+          <div class="column column-middle bgc--white">
+            <div class="contact_form pd_box--x40">
+              <div class="subtitle subtitle_into--center slate cl--darkblue txt_size--em3 txt_center txt_upper mg_bottom--x20">
+                <h2>Ingrese su solicitud y en pocos momentos le responderemos</h2>
+              </div>
+              <form id="contact">
+                <div class="data select error">
+                  <select class="contac_input" id="eco">
+                    <option value="0">Tipo</option>
+                    <option value="1">Mi mama</option>
+                    <option value="2">Mi papa</option>
+                    <option value="3">Otro</option>
+                  </select>
+                </div>
+                <div class="data fullName error">
+                  <input class="contac_input" type="text" placeholder="Nombre completo">
+                </div>
+                <div class="data company error">
+                  <input class="contact_input" type="text" placeholder="Empresa">
+                </div>
+                <div class="data city error">
+                  <input class="contact_input" type="text" placeholder="Ciudad">
+                </div>
+                <div class="data phone error">
+                  <input class="contact_input" type="number" placeholder="Teléfono">
+                </div>
+                <div class="data email error">
+                  <input class="contact_input" type="email" placeholder="Correo Electronico">
+                </div>
+                <div class="data message erro">
+                  <textarea class="contact_input" placeholder="Mensaje:"></textarea>
+                </div>
+                <button class="btn btn--full btn_site mg_btn" type="submit">Enviar</button>
+              </form>
             </div>
-            <form id="contact">
-              <div class="data affair error">
-                <input class="contac_input" type="text" placeholder="Tipo de Contacto">
-              </div>
-              <div class="data fullName error">
-                <input class="contac_input" type="text" placeholder="Nombre completo">
-              </div>
-            </form>
           </div>
-          <div class="column column-middle pd_box--x40"><span class="circle circle--min bgc--darkblue cl--white"><i class="icon icon-sedep"></i></span></div>
+          <div class="column column-middle">
+            <div class="contact_info pd_box--x40"><span class="circle circle--med bgc--darkblue cl--white mg_bottom--x20"><i class="icon icon-sedep"></i></span>
+              <div class="title cl--darkblue txt_size--em3 txt_upper mg_bottom--x10">
+                <h2><b>Sede Principal <br> Barrancabermeja</b></h2>
+              </div>
+              <div class="paragraf cl--darkblue txt_size--em2 mg_bottom--x30">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit aperiam magnam nobis pariatur sed amet repudiandae, asperiores, cumque incidunt eveniet reiciendis ducimus nihil quam quas quisquam adipisci maiores hic minus.</p><br>
+                <p>Servicios de seguridad y salud</p>
+                <p>Telefono</p>
+              </div>
+              <div class="title cl--darkblue txt_size--em3 txt_upper mg_bottom--x10">
+                <h2><b>Sucursal <br>Bucaramanga</b></h2>
+              </div>
+              <div class="paragraf cl--darkblue txt_size--em2 mg_bottom--x30">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit aperiam magnam nobis pariatur sed amet repudiandae, asperiores, cumque incidunt eveniet reiciendis ducimus nihil quam quas quisquam adipisci maiores hic minus.</p><br>
+                <p>Servicios de seguridad y salud</p>
+                <p>Telefono</p>
+              </div>
+              <button class="btn btn_site btn--float">Servicio A Domicilio</button>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+    <main class="full" id="mapa">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.5123249698413!2d-73.85550038518305!3d7.066439294896357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e42eb578608a4d1%3A0x511930bb3f113e36!2sCra.+27+%2357-1%2C+Barrancabermeja%2C+Santander!5e0!3m2!1ses!2sco!4v1503171605472" height="400" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
+      </div>
+    </main>
+    <footer class="bgc--darkblue pd_site">
+      <div class="container">
+        <div class="column txt_center mg_bottom--x30">
+          <div class="list list--inline txt_upper">
+                <li><a href="#lab">Laboratorio Clinico</a></li>
+                <li><a href="#service">Seguridad y Salud en el Trabajo</a></li>
+                <li><a href="#promo">Promociones</a></li>
+                <li><a href="#company">Nuestra Organización</a></li>
+                <li><a href="#about">Contacto</a></li>
+          </div>
+        </div>
+        <div class="column txt_center mg_bottom--x20">
+          <div class="list list_social list--inline">
+            <li><a href="https://www.facebook.com/" target="_blank"><span class="circle circle--min"><i class="icon icon-facebook"></i></span></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><span class="circle circle--min"><i class="icon icon-twitter"></i></span></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"><span class="circle circle--min"><i class="icon icon-linkedin"></i></span></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><span class="circle circle--min"><i class="icon icon-youtube"></i></span></a></li>
+          </div>
+        </div>
+        <div class="column txt_center mg_bottom--x5"><small>© Laboratios M&M Diagnóstico, LTDA, 2017. Todos los derechos reservados</small></div>
+      </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script src="js/custom.js"></script>
   </body>

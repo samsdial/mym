@@ -16,7 +16,7 @@ block content
                             h2  Lorem ipsum dolor sit amet.
                         .subtitle.cl--white.txt_size--em2
                             h4 Lorem ipsum dolor sit
-    main.full.bgc--slate.pd_site
+    main#lab.full.bgc--slate.pd_site
         .container
             .row.mg_bottom--x30
                 .column
@@ -32,7 +32,7 @@ block content
                             h2 Prueba Clinica Quimica
                         .paragraf
                             p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ex quae officiis minima recusandae.
-    main.full.bgc--aqua.pd_site
+    main#service.full.bgc--aqua.pd_site
         .container
             .row.mg_bottom--x30
                 .column
@@ -56,7 +56,7 @@ block content
                         h2 Somos lo que tu empresa necesita para apoyarte en seguridad y salud en el trabajo
                     .paragraf.cl--white.txt_size--em3
                         h4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam et quod sunt culpa, incidunt molestiae adipisci excepturi, dolores numquam magni error harum aperiam fuga ducimus dolorum perspiciatis officia, nobis explicabo.
-    main.full.bgc--slate.pd_site
+    main#promo.full.bgc--slate.pd_site
         .container
             .row.mg_bottom--x20
                 .column
@@ -96,13 +96,12 @@ block content
                             h2 Examen
                         .paragraf
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ex quae officiis minima recusandae.
-    main.full.bgc--slate.pd_site
+    main#company.full.bgc--slate.pd_site
         .container
             .row
                 .column
                     .subtitle.subtitle_into.darkblue.cl--darkblue.txt_size--em4.txt_upper
                         h2 Nuestra Organización
-    
     main.full.pd_site
         .container.company
             .row.mg_bottom--x50
@@ -115,7 +114,7 @@ block content
                     .paragraf.cl--darkblue.txt_size--em2
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde laborum consequatur neque sequi, voluptatum ullam deleniti maxime quod ad omnis.
     main.full.bgc--slate.pd_site
-        .container.company            
+        .container.company
             .row.mg_bottom--x50
                 .column.column-middle.txt_right
                     .title.cl--cyan.txt_size--em3.mg_bottom--x10
@@ -147,22 +146,58 @@ block content
                         h2 Visión
                     .paragraf.cl--darkblue.txt_size--em2.mg_bottom--x20
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem distinctio molestias fuga earum blanditiis perferendis.
-                        
-    main.full.bgc--darkblue.pd_site
+    main#about.full.bgc--darkblue.pd_site
         .container.txt_center
             .title.cl--white.txt_upper.txt_size--em4
                 h2 Contacto
     main.full.bgc--aqua.pd_site
         .container
             .row
-                .column.column-middle.bgc--white.pd_box--x40
-                    .subtitle.cl--darkblue
-                        h2 Contacto
-                    form#contact
-                        .data.affair.error
-                            input.contac_input(type="text", placeholder="Tipo de Contacto")
-                        .data.fullName.error
-                            input.contac_input(type="text", placeholder="Nombre completo")
-                .column.column-middle.pd_box--x40
-                    span.circle.circle--min.bgc--darkblue.cl--white
-                        i.icon.icon-sedep
+                .column.column-middle.bgc--white
+                    .contact_form.pd_box--x40
+                        .subtitle.subtitle_into--center.slate.cl--darkblue.txt_size--em3.txt_center.txt_upper.mg_bottom--x20
+                            h2 Ingrese su solicitud y en pocos momentos le responderemos
+                        form#contact
+                            .data.select.error
+                                select#eco.contac_input
+                                    option(value="0") Tipo
+                                    option(value="1") Mi mama
+                                    option(value="2") Mi papa
+                                    option(value="3") Otro
+                            .data.fullName.error
+                                input.contac_input(type="text", placeholder="Nombre completo")
+                            .data.company.error
+                                input.contact_input(type="text", placeholder="Empresa")
+                            .data.city.error
+                                input.contact_input(type="text", placeholder="Ciudad")
+                            .data.phone.error
+                                input.contact_input(type="number", placeholder="Teléfono")
+                            .data.email.error
+                                input.contact_input(type="email", placeholder="Correo Electronico")
+                            .data.message.erro
+                                textarea.contact_input(placeholder="Mensaje:")
+                            button.btn.btn--full.btn_site.mg_btn(type="submit") Enviar
+                .column.column-middle
+                    .contact_info.pd_box--x40
+                        span.circle.circle--med.bgc--darkblue.cl--white.mg_bottom--x20
+                            i.icon.icon-sedep
+                        .title.cl--darkblue.txt_size--em3.txt_upper.mg_bottom--x10
+                            h2
+                                b Sede Principal <br> Barrancabermeja
+                        .paragraf.cl--darkblue.txt_size--em2.mg_bottom--x30
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit aperiam magnam nobis pariatur sed amet repudiandae, asperiores, cumque incidunt eveniet reiciendis ducimus nihil quam quas quisquam adipisci maiores hic minus.
+                            br
+                            p Servicios de seguridad y salud
+                            p Telefono
+                        .title.cl--darkblue.txt_size--em3.txt_upper.mg_bottom--x10
+                            h2
+                                b Sucursal <br>Bucaramanga
+                        .paragraf.cl--darkblue.txt_size--em2.mg_bottom--x30
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit aperiam magnam nobis pariatur sed amet repudiandae, asperiores, cumque incidunt eveniet reiciendis ducimus nihil quam quas quisquam adipisci maiores hic minus.
+                            br
+                            p Servicios de seguridad y salud
+                            p Telefono
+                        button.btn.btn_site.btn--float Servicio A Domicilio
+    main.full#mapa
+        .map
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.5123249698413!2d-73.85550038518305!3d7.066439294896357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e42eb578608a4d1%3A0x511930bb3f113e36!2sCra.+27+%2357-1%2C+Barrancabermeja%2C+Santander!5e0!3m2!1ses!2sco!4v1503171605472", height="400", frameborder="0", style="border:0; width:100%;", allowfullscreen)

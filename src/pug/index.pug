@@ -4,13 +4,13 @@ block content
     main.full
         .slider
             - for (var x = 0; x < 2; x++)
-                .slick_slide--img(style="background-image: url(../images/slider/one.jpg)")
+                .slick_slide--img(style="background-image: url(images/slider/one.jpg)")
                     .info
                         .title.cl--white.txt_size--em4.txt_upper
                             h2 Lorem ipsum dolor sit amet
                         .subtitle.cl--white.txt_size--em2
                             h4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde officia nemo asperiores delectus facere earum dolore voluptate perferendis.
-                .slick_slide--img(style="background-image: url(../images/slider/two.jpg)")
+                .slick_slide--img(style="background-image: url(images/slider/two.jpg)")
                     .info
                         .title.cl--white.txt_size--em4.txt_upper
                             h2  Lorem ipsum dolor sit amet.
@@ -99,21 +99,24 @@ block content
     main#company.full.bgc--slate.pd_site
         .container
             .row
-                .column
+                .column.eco
                     .subtitle.subtitle_into.darkblue.cl--darkblue.txt_size--em4.txt_upper
                         h2 Nuestra Organización
+                    a.btn--float(href="#infra")
+                        span.circle.circle--min.bgc--darkblue.cl--white
+                            i.icon.icon-chevron-down
     main.full.pd_site
         .container.company
             .row.mg_bottom--x50
                 .column.column-middle.txt_right.mg_top--x30
                     figure.company
-                        img(src="/images/company/aboutus.jpg")
+                        img(src="images/company/aboutus.jpg")
                 .column.column-middle
                     .title.cl--cyan.txt_size--em3.mg_bottom--x10
                         h2 Reseña Historica
                     .paragraf.cl--darkblue.txt_size--em2
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde laborum consequatur neque sequi, voluptatum ullam deleniti maxime quod ad omnis.
-    main.full.bgc--slate.pd_site
+    main#infra.full.bgc--slate.pd_site
         .container.company
             .row.mg_bottom--x50
                 .column.column-middle.txt_right
@@ -124,7 +127,7 @@ block content
                     a.btn.btn_site.mg_btn(href="#") leer más
                 .column.column-middle.mg_top--x30
                     figure.company
-                        img(src="/images/company/infraestructure.jpg")
+                        img(src="images/company/infraestructure.jpg")
     main.full.bgc--darkblue.pd_site
         .container.txt_center
             .title.cl--white.txt_upper.txt_size--em4

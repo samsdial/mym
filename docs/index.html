@@ -30,7 +30,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script><![endif]-->
   </head>
@@ -42,7 +42,7 @@
             <div class="box-logo"><span class="logo logo_site"></span></div>
           </div>
           <div class="column_nav">
-            <nav class="nav">
+            <nav class="eco nav">
               <ul class="nav--site">
                     <li><a href="#lab">Laboratorio Clinico</a></li>
                     <li><a href="#service">Seguridad y Salud en el Trabajo</a></li>
@@ -57,7 +57,7 @@
     </div>
     <main class="full">
       <div class="slider">
-        <div class="slick_slide--img" style="background-image: url(../images/slider/one.jpg);">
+        <div class="slick_slide--img" style="background-image: url(images/slider/one.jpg);">
           <div class="info">
             <div class="title cl--white txt_size--em4 txt_upper">
               <h2>Lorem ipsum dolor sit amet</h2>
@@ -67,7 +67,7 @@
             </div>
           </div>
         </div>
-        <div class="slick_slide--img" style="background-image: url(../images/slider/two.jpg);">
+        <div class="slick_slide--img" style="background-image: url(images/slider/two.jpg);">
           <div class="info">
             <div class="title cl--white txt_size--em4 txt_upper">
               <h2> Lorem ipsum dolor sit amet.</h2>
@@ -77,7 +77,7 @@
             </div>
           </div>
         </div>
-        <div class="slick_slide--img" style="background-image: url(../images/slider/one.jpg);">
+        <div class="slick_slide--img" style="background-image: url(images/slider/one.jpg);">
           <div class="info">
             <div class="title cl--white txt_size--em4 txt_upper">
               <h2>Lorem ipsum dolor sit amet</h2>
@@ -87,7 +87,7 @@
             </div>
           </div>
         </div>
-        <div class="slick_slide--img" style="background-image: url(../images/slider/two.jpg);">
+        <div class="slick_slide--img" style="background-image: url(images/slider/two.jpg);">
           <div class="info">
             <div class="title cl--white txt_size--em4 txt_upper">
               <h2> Lorem ipsum dolor sit amet.</h2>
@@ -564,10 +564,10 @@
     <main class="full bgc--slate pd_site" id="company">
       <div class="container">
         <div class="row">
-          <div class="column">
+          <div class="column eco">
             <div class="subtitle subtitle_into darkblue cl--darkblue txt_size--em4 txt_upper">
               <h2>Nuestra Organización</h2>
-            </div>
+            </div><a class="btn--float" href="#infra"><span class="circle circle--min bgc--darkblue cl--white"><i class="icon icon-chevron-down"></i></span></a>
           </div>
         </div>
       </div>
@@ -576,7 +576,7 @@
       <div class="container company">
         <div class="row mg_bottom--x50">
           <div class="column column-middle txt_right mg_top--x30">
-            <figure class="company"><img src="/images/company/aboutus.jpg"></figure>
+            <figure class="company"><img src="images/company/aboutus.jpg"></figure>
           </div>
           <div class="column column-middle">
             <div class="title cl--cyan txt_size--em3 mg_bottom--x10">
@@ -589,7 +589,7 @@
         </div>
       </div>
     </main>
-    <main class="full bgc--slate pd_site">
+    <main class="full bgc--slate pd_site" id="infra">
       <div class="container company">
         <div class="row mg_bottom--x50">
           <div class="column column-middle txt_right">
@@ -601,7 +601,7 @@
             </div><a class="btn btn_site mg_btn" href="#">leer más</a>
           </div>
           <div class="column column-middle mg_top--x30">
-            <figure class="company"><img src="/images/company/infraestructure.jpg"></figure>
+            <figure class="company"><img src="images/company/infraestructure.jpg"></figure>
           </div>
         </div>
       </div>
@@ -719,14 +719,14 @@
     </main>
     <footer class="bgc--darkblue pd_site">
       <div class="container">
-        <div class="column txt_center mg_bottom--x30">
-          <div class="list list--inline txt_upper">
+        <div class="column txt_center mg_bottom--x30 eco">
+          <ul class="list list--inline txt_upper">
                 <li><a href="#lab">Laboratorio Clinico</a></li>
                 <li><a href="#service">Seguridad y Salud en el Trabajo</a></li>
                 <li><a href="#promo">Promociones</a></li>
                 <li><a href="#company">Nuestra Organización</a></li>
                 <li><a href="#about">Contacto</a></li>
-          </div>
+          </ul>
         </div>
         <div class="column txt_center mg_bottom--x20">
           <div class="list list_social list--inline">
@@ -740,6 +740,7 @@
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="js/classie.js"></script>
     <script src="js/custom.js"></script>
   </body>
 </html>

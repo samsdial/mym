@@ -6,8 +6,10 @@ $(function(){
     });
     // Animation menu click
     $(function() {
+        var link = $('.eco ul li a[href*=#]');
+        var link = $('.eco a[href*=#]');
       var $target, targetOffset, url;
-      $('.nav ul li a[href*=#]').click(function() {
+      link.click(function() {
         var $target, targetOffset;
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
           $target = $(this.hash);
@@ -33,6 +35,23 @@ $(function(){
         }
       }
     });
+// nav bar
+function init() {
+    window.addEventListener('scroll', function(e){
+        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            shrinkOn = 300,
+            header = document.querySelector("header");
+        if (distanceY > shrinkOn) {
+            classie.add(header,"smaller");
+        } else {
+            if (classie.has(header,"smaller")) {
+                classie.remove(header,"smaller");
+            }
+        }
+    });
+}
+window.onload = init();
+    // Fin nav
     // slider slick home
     $('.slider').slick({
         dots: true,

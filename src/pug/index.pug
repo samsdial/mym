@@ -1,21 +1,40 @@
 extends ./base/layout.pug
 
 block content
-    main.full
+    main.full.pt_rel
+        span.icon_slider.icon-iso
+        span.icon_slider.icon-iqnet
         .slider
-            - for (var x = 0; x < 2; x++)
-                .slick_slide--img(style="background-image: url(images/slider/one.jpg)")
-                    .info
-                        .title.cl--white.txt_size--em4.txt_upper
-                            h2 Laboramos para servite más y mejor!
-                        .subtitle.cl--white.txt_size--em2
-                            h4 Somos una organización competitiva y sostenible a través de un portafolio de servicios integrados en salud y seguridad. Ofrecemos servicios de Laboratorio Clínico y Seguridad y Salud en el Trabajo dando soporte a nuestras empresas clientes de manera que logren sus objetivos de mejora.
-                .slick_slide--img(style="background-image: url(images/slider/two.jpg)")
-                    .info
-                        .title.cl--white.txt_size--em4.txt_upper
-                            h2 Laboramos para servite más y mejor!
-                        .subtitle.cl--white.txt_size--em2
-                            h4 Somos una organización competitiva y sostenible a través de un portafolio de servicios integrados en salud y seguridad. Ofrecemos servicios de Laboratorio Clínico y Seguridad y Salud en el Trabajo dando soporte a nuestras empresas clientes de manera que logren sus objetivos de mejora.
+            .slick_slide--img(style="background-image: url(images/slider/one.jpg)")
+                .info
+                    .title.cl--white.txt_size--em4.txt_upper
+                        h2 Laboramos para servite más y mejor!
+                    .subtitle.cl--white.txt_size--em2
+                        h4 Somos una organización competitiva y sostenible a través de un portafolio de servicios integrados en salud y seguridad. Ofrecemos servicios de Laboratorio Clínico y Seguridad y Salud en el Trabajo dando soporte a nuestras empresas clientes de manera que logren sus objetivos de mejora.
+            .slick_slide--img(style="background-image: url(images/slider/two.jpg)")
+                .info
+                    .title.cl--white.txt_size--em4.txt_upper
+                        h2 Laboramos para servite más y mejor!
+                    .subtitle.cl--white.txt_size--em2
+                        h4 Somos una organización competitiva y sostenible a través de un portafolio de servicios integrados en salud y seguridad. Ofrecemos servicios de Laboratorio Clínico y Seguridad y Salud en el Trabajo dando soporte a nuestras empresas clientes de manera que logren sus objetivos de mejora.
+            .slick_slide--img(style="background-image: url(images/slider/three.jpg)")
+                .info
+                    .title.cl--white.txt_size--em4.txt_upper
+                        h2 Laboramos para servite más y mejor!
+                    .subtitle.cl--white.txt_size--em2
+                        h4 Somos una organización competitiva y sostenible a través de un portafolio de servicios integrados en salud y seguridad. Ofrecemos servicios de Laboratorio Clínico y Seguridad y Salud en el Trabajo dando soporte a nuestras empresas clientes de manera que logren sus objetivos de mejora.
+            .slick_slide--img(style="background-image: url(images/slider/four.jpg)")
+                .info
+                    .title.cl--white.txt_size--em4.txt_upper
+                        h2 Laboramos para servite más y mejor!
+                    .subtitle.cl--white.txt_size--em2
+                        h4 Somos una organización competitiva y sostenible a través de un portafolio de servicios integrados en salud y seguridad. Ofrecemos servicios de Laboratorio Clínico y Seguridad y Salud en el Trabajo dando soporte a nuestras empresas clientes de manera que logren sus objetivos de mejora.
+            .slick_slide--img(style="background-image: url(images/slider/five.jpg)")
+                .info
+                    .title.cl--white.txt_size--em4.txt_upper
+                        h2 Laboramos para servite más y mejor!
+                    .subtitle.cl--white.txt_size--em2
+                        h4 Somos una organización competitiva y sostenible a través de un portafolio de servicios integrados en salud y seguridad. Ofrecemos servicios de Laboratorio Clínico y Seguridad y Salud en el Trabajo dando soporte a nuestras empresas clientes de manera que logren sus objetivos de mejora.
     main#lab.full.bgc--slate.pd_site
         .container
             .row.mg_bottom--x30
@@ -25,13 +44,30 @@ block content
                     .paragraf.cl--darkblue
                         p Brindamos Servicios de laboratorio clínico de rutina y especializados, con el cumplimento de las controles de calidad requeridos que lo hace confiables y oportunos.
             .multi-item
-                - for (var x = 0; x < 10; x++)
-                    .box_service.cl--darkblue
-                        i.icon.icon-test.icon-text.icon_size--vh5
-                        .title.txt_size--em3.txt_capital.mg_bottom--x10.mg_top--x10
-                            h2 Pruebas Hematología
-                        .paragraf
-                            p Incluye evaluaciones de pruebas de Hematologia acerca de la formación y desordenes sanguíneos.
+                .box_service.cl--darkblue
+                    i.icon.icon-test.icon-text.icon_size--vh5
+                    .title.txt_size--em3.txt_capital.mg_bottom--x10.mg_top--x10
+                        h2 Pruebas Hematología
+                    .paragraf
+                        p Incluye evaluaciones de pruebas de Hematologia acerca de la formación y desordenes sanguíneos.
+                .box_service.cl--darkblue
+                    i.icon.icon-test.icon-text.icon_size--vh5
+                    .title.txt_size--em3.txt_capital.mg_bottom--x10.mg_top--x10
+                        h2 Pruebas Quimica Clínica
+                    .paragraf
+                        p Sumistran una imagen general del metabolismo y equilibrado químico del cuerpo.
+                .box_service.cl--darkblue
+                    i.icon.icon-test.icon-text.icon_size--vh5
+                    .title.txt_size--em3.txt_capital.mg_bottom--x10.mg_top--x10
+                        h2 Pruebas Inmunología
+                    .paragraf
+                        p Pruebas relacionadas con el sistema inmune, respuesta a enfermedades. 
+                .box_service.cl--darkblue
+                    i.icon.icon-test.icon-text.icon_size--vh5
+                    .title.txt_size--em3.txt_capital.mg_bottom--x10.mg_top--x10
+                        h2 Pruebas Parasitología
+                    .paragraf
+                        p Pruebas relacionadas con el estudio e identificación de los parásitos humanos.
     main#service.full.bgc--aqua.pd_site
         .container
             .row.mg_bottom--x30
@@ -41,13 +77,30 @@ block content
                     .paragraf.cl--darkblue
                         p Brindamos servicios de medicina preventiva y del trabajo, enfocados a la prevención, control del riesgo en las empresas, apoyándoles en sus objetivos de mejora.
             .multi-item
-                - for (var x = 0; x < 10; x++)
-                    .box_service.cl--darkblue
-                        i.icon.icon-examen.icon-text.icon_size--vh5
-                        .title.cl--darkblue.txt_size--em3.mg_bottom--x10.mg_top--x10.txt_capital
-                            h2 Exámen fisico ingreso, egreso, periódico
-                        .paragraf
-                            p Conjunto de maniobras que realiza un médico para obtener información sobre el estado de salud de una persona.
+                .box_service.cl--darkblue 
+                    i.icon.icon-examen.icon-text.icon_size--vh5
+                    .title.cl--darkblue.txt_size--em3.mg_bottom--x10.mg_top--x10.txt_capital
+                        h2 Exámen fisico ingreso, egreso, periódico
+                    .paragraf
+                        p Conjunto de maniobras que realiza un médico para obtener información sobre el estado de salud de una persona.
+                .box_service.cl--darkblue
+                    i.icon.icon-examen.icon-text.icon_size--vh5
+                    .title.cl--darkblue.txt_size--em3.mg_bottom--x10.mg_top--x10.txt_capital
+                        h2 Exámen fisico Reintegro Laboral
+                    .paragraf
+                        p Conjunto de maniobras que realiza un médico para obtener información sobre el estado de salud de una persona para su reintegro laboral.
+                .box_service.cl--darkblue
+                    i.icon.icon-examen.icon-text.icon_size--vh5    
+                    .title.cl--darkblue.txt_size--em3.mg_bottom--x10.mg_top--x10.txt_capital
+                        h2 Audiometria Tamiz
+                    .paragraf
+                        p Prueba que permite valorar la capacidad auditiva en una primera instancia.
+                .box_service.cl--darkblue
+                    i.icon.icon-examen.icon-text.icon_size--vh5
+                    .title.cl--darkblue.txt_size--em3.mg_bottom--x10.mg_top--x10.txt_capital
+                        h2 Visiometría
+                    .paragraf
+                        p Prueba que permite valorar la capacidad visual en una primera instancia.
     main.full.bg_grad--lightblue.pd_site
         .container
             .row.mg_bottom--x30
@@ -64,18 +117,44 @@ block content
                     .title.cl--darkblue.txt_size--em4.subtitle_into.darkblue.txt_upper
                         h2 Promociones
             .promo-item
-                - for (var x = 0; x < 10; x++)
-                    .box_promo
-                        figure
-                            img(src="images/promo/one.jpg")
-                            figcaption
-                                .date.cl--gray.mg_bottom--x10.txt_upper
-                                    small Abr 14, 2015
-                                .info
-                                    .title.cl--darkblue.txt_size--em3.mg_bottom--x20.txt_capital.txt_upper
-                                        h2 Mes de Noviembre
-                                    .paragraf.mg_bottom--x20
-                                        p Descuento del 50% sobre el valor de sus exámenes de laboratorio durante el mes de Noviembre. Tu salud es vital para nosotros... "¡Vive Sano, Sé Feliz!"
+                .box_promo
+                    figure
+                        img(src="images/promo/one.jpg")
+                        figcaption
+                            .date.cl--gray.mg_bottom--x10.txt_upper
+                                small Abr 14, 2015
+                            .info
+                                .title.cl--darkblue.txt_size--em3.mg_bottom--x20.txt_capital.txt_upper
+                                    h2 Mes de Noviembre
+                                .paragraf.mg_bottom--x20
+                                    p Descuento del 50% sobre el valor de sus exámenes de laboratorio durante el mes de Noviembre. Tu salud es vital para nosotros... "¡Vive Sano, Sé Feliz!"
+                .box_promo
+                    figure
+                        img(src="images/promo/one.jpg")
+                        figcaption
+                            .date.cl--gray.mg_bottom--x10.txt_upper
+                                small Mar 27, 2015
+                            .info
+                                .title.cl--darkblue.txt_size--em3.mg_bottom--x20.txt_capital.txt_upper
+                                    h2 Implementación sistema de gestión
+                                .paragraf.mg_bottom--x20
+                                    p Necesitas implementar el SG-SST en tu empresa... Haz llegado al sitio adecuado... Acompañamiento, asesoría, implementación a encuentras con M&M Diagnóstico Querenis ayudarte a:
+                                    br
+                                    ul
+                                        li Aumentar el bienestar a nivel personal, familiar y laboral
+                                        li Controlar la salud.
+                                        li Apoyar en los controles internos de la empresa
+                .box_promo
+                    figure
+                        img(src="images/promo/one.jpg")
+                        figcaption
+                            .date.cl--gray.mg_bottom--x10.txt_upper
+                                small Feb 12, 2015
+                            .info
+                                .title.cl--darkblue.txt_size--em3.mg_bottom--x20.txt_capital.txt_upper
+                                    h2 Promoción Tres
+                                .paragraf.mg_bottom--x20
+                                    p Conservar despejado y limpio el área de tránsito y de trabajo, eliminando objetos u obstáculos que puedan provocar una caída (cajas, cables, gabinetes o cajones abiertos). Evitar a nivel del suelo cualquier tipo de cable eléctricos, telefónicos, o cualquier material colgante que pueda generar una caída.
 
     main.full.bgc--darkblue.pd_site
         .container

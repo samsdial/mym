@@ -80,3 +80,27 @@
 
     &-youtube:before
         content: "\f167"
+.icon
+    &_slider
+        position: absolute
+        bottom: 22px
+        z-index: 99
+        display: inline-block
+        @media (min-width: 0px) and (max-width: 449px)
+            display: none !important
+    &-iso
+        right: 122px + 60px
+    &-iqnet
+        right: 122px 
+    &-iso:after
+        content: ""
+        width: 33px
+        height: 55px
+        display: block
+        background: transparent url('../images/theme/iso.png')no-repeat center center/cover
+    &-iqnet:after
+        content: ""
+        width: 46px
+        height: 47px
+        display: block
+        background: transparent url('../images/theme/iqnet.png')no-repeat center center/cover

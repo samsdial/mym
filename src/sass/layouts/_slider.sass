@@ -73,3 +73,19 @@
             font-variant: normal
             text-transform: none
             font-size: 25px
+    .slick-dots
+        bottom: 15px
+        text-align: left
+        margin-left: 60px
+        @media (min-width: 0px) and (max-width: 449px)
+            display: none !important
+        li
+            button:before
+                color: $white
+                opacity: 1
+        li.slick-active
+            button:before
+                color: transparent
+                opacity: 1
+                border-radius: 50%
+                border: 5px solid $white

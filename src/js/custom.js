@@ -55,6 +55,7 @@ window.onload = init();
     // slider slick home
     $('.slider').slick({
         dots: true,
+        arrows: true,
         infinite: true,
         speed: 500,
         fade: true,

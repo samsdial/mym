@@ -1,10 +1,4 @@
 // header
-header.smaller
-    background-color: rgba($cyan, .8)
-    border-top: 3px solid $blue
-    .logo_site
-        width: 100px
-        height: 54.7px
 .header
     &_wrapper
         width: 100%
@@ -16,9 +10,17 @@ header.smaller
             padding: 0
             z-index: 11
             width: 100%
+            background-color: transparent
+            transition: $motion
             .container
                 padding: 13px 12px 0px 12px
                 vertical-align: middle
+header.smaller
+    background-color: rgba($cyan, .8)
+    border-top: 3px solid $blue
+    .logo_site
+        width: 100px
+        height: 54.7px
 .column
     &_brand,
     &_nav

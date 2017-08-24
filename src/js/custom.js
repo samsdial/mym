@@ -35,22 +35,22 @@ $(function(){
         }
       }
     });
-// nav bar
-function init() {
-    window.addEventListener('scroll', function(e){
-        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 300,
-            header = document.querySelector("header");
-        if (distanceY > shrinkOn) {
-            classie.add(header,"smaller");
-        } else {
-            if (classie.has(header,"smaller")) {
-                classie.remove(header,"smaller");
+    // nav bar
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
             }
-        }
-    });
-}
-window.onload = init();
+        });
+    }
+    window.onload = init();
     // Fin nav
     // slider slick home
     $('.slider').slick({
@@ -164,5 +164,27 @@ window.onload = init();
             slidesToScroll: 1
           }
         }]
+    });
+    // acordeon para cualquier panel
+    $('.panel').slideUp();
+    $('.panel-js').on('click', function(evt){
+        evt.preventDefault();
+        var button = $(this);
+        // button.addClass('active');
+        if (button.hasClass('active')){
+            button.addClass('in');
+            button.removeClass('active');
+            $('.panel').not(this).each(function() {
+                $(this).slideUp();
+            });
+            //console.log('active');
+        } else if (button.hasClass('in')){
+            button.removeClass('in');
+            button.addClass('active');
+            $('.panel').not(this).each(function() {
+                $(this).slideDown();
+            });
+            //console.log('on');
+        }
     });
 });

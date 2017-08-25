@@ -5,6 +5,12 @@ block content
         span.icon_slider.icon-iso
         span.icon_slider.icon-iqnet
         .slider
+            .slick_slide--img(style="background-image: url(images/slider/three.jpg)")
+                .info
+                    .title.cl--white.txt_size--em4.txt_upper
+                        h2 Laboramos para servite más y mejor!
+                    .subtitle.cl--white.txt_size--em2
+                        h4 Somos una organización competitiva y sostenible a través de un portafolio de servicios integrados en salud y seguridad. Ofrecemos servicios de Laboratorio Clínico y Seguridad y Salud en el Trabajo dando soporte a nuestras empresas clientes de manera que logren sus objetivos de mejora.
             .slick_slide--img(style="background-image: url(images/slider/one.jpg)")
                 .info
                     .title.cl--white.txt_size--em4.txt_upper
@@ -12,12 +18,6 @@ block content
                     .subtitle.cl--white.txt_size--em2
                         h4 Somos una organización competitiva y sostenible a través de un portafolio de servicios integrados en salud y seguridad. Ofrecemos servicios de Laboratorio Clínico y Seguridad y Salud en el Trabajo dando soporte a nuestras empresas clientes de manera que logren sus objetivos de mejora.
             .slick_slide--img(style="background-image: url(images/slider/two.jpg)")
-                .info
-                    .title.cl--white.txt_size--em4.txt_upper
-                        h2 Laboramos para servite más y mejor!
-                    .subtitle.cl--white.txt_size--em2
-                        h4 Somos una organización competitiva y sostenible a través de un portafolio de servicios integrados en salud y seguridad. Ofrecemos servicios de Laboratorio Clínico y Seguridad y Salud en el Trabajo dando soporte a nuestras empresas clientes de manera que logren sus objetivos de mejora.
-            .slick_slide--img(style="background-image: url(images/slider/three.jpg)")
                 .info
                     .title.cl--white.txt_size--em4.txt_upper
                         h2 Laboramos para servite más y mejor!
@@ -286,30 +286,32 @@ block content
             .row
                 .column.column-middle.bgc--white
                     .contact_form.pd_box--x40
-                        .subtitle.subtitle_into--center.slate.cl--darkblue.txt_size--em3.txt_center.txt_upper.mg_bottom--x20
+                        .subtitle.subtitle_into--center.slate.cl--darkblue.txt_size--em3.txt_center.txt_upper.mg_bottom--x40
                             h2 Ingrese su solicitud y en pocos momentos le responderemos
                         form#contact
-                            .data.select.error
-                                select#eco.contac_input
-                                    option(value="0") Tipo
-                                    option(value="1") Domicilio
-                                    option(value="2") Queja
-                                    option(value="3") Reclamo
-                                    option(value="4") Sugerencia
-                                    option(value="5") Solicitud
-                            .data.fullName.error
-                                input.contac_input(type="text", placeholder="Nombre completo")
-                            .data.company.error
-                                input.contact_input(type="text", placeholder="Empresa")
-                            .data.city.error
-                                input.contact_input(type="text", placeholder="Ciudad")
-                            .data.phone.error
-                                input.contact_input(type="text", placeholder="Teléfono")
-                            .data.email.error
-                                input.contact_input(type="email", placeholder="Correo Electronico")
-                            .data.message.erro
-                                textarea.contact_input(placeholder="Mensaje:")
-                            button.btn.btn--full.btn_site.mg_btn(type="submit") Enviar
+                            .data.select
+                                select#type.contac_input
+                                    option(value="tipo") Tipo
+                                    option(value="domicilio") Domicilio
+                                    option(value="queja") Queja
+                                    option(value="recalmo") Reclamo
+                                    option(value="sugerencia") Sugerencia
+                                    option(value="solicitud") Solicitud
+                            .data.fullName
+                                input#fullName.contac_input(type="text", placeholder="Nombre completo")
+                            .data.business
+                                input#business.contact_input(type="text", placeholder="Empresa")
+                            .data.city
+                                input#city.contact_input(type="text", placeholder="Ciudad")
+                            .data.phone
+                                input#phone.contact_input(type="text", placeholder="Teléfono")
+                            .data.email
+                                input#email.contact_input(type="email", placeholder="Correo Electronico")
+                            .data.message
+                                textarea#message.contact_input(placeholder="Mensaje:")
+                            .alerta
+                                p
+                            button.btn.btn--full.btn_site.mg_btn.envio(type="submit") Enviar
                 .column.column-middle
                     .contact_info.pd_box--x40
                         span.circle.circle--med.bgc--darkblue.cl--white.mg_bottom--x20

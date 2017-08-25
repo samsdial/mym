@@ -63,6 +63,16 @@
     </div>
     <main class="full pt_rel"><span class="icon_slider icon-iso"></span><span class="icon_slider icon-iqnet"></span>
       <div class="slider">
+        <div class="slick_slide--img" style="background-image: url(images/slider/three.jpg);">
+          <div class="info">
+            <div class="title cl--white txt_size--em4 txt_upper">
+              <h2>Laboramos para servite más y mejor!</h2>
+            </div>
+            <div class="subtitle cl--white txt_size--em2">
+              <h4>Somos una organización competitiva y sostenible a través de un portafolio de servicios integrados en salud y seguridad. Ofrecemos servicios de Laboratorio Clínico y Seguridad y Salud en el Trabajo dando soporte a nuestras empresas clientes de manera que logren sus objetivos de mejora.</h4>
+            </div>
+          </div>
+        </div>
         <div class="slick_slide--img" style="background-image: url(images/slider/one.jpg);">
           <div class="info">
             <div class="title cl--white txt_size--em4 txt_upper">
@@ -74,16 +84,6 @@
           </div>
         </div>
         <div class="slick_slide--img" style="background-image: url(images/slider/two.jpg);">
-          <div class="info">
-            <div class="title cl--white txt_size--em4 txt_upper">
-              <h2>Laboramos para servite más y mejor!</h2>
-            </div>
-            <div class="subtitle cl--white txt_size--em2">
-              <h4>Somos una organización competitiva y sostenible a través de un portafolio de servicios integrados en salud y seguridad. Ofrecemos servicios de Laboratorio Clínico y Seguridad y Salud en el Trabajo dando soporte a nuestras empresas clientes de manera que logren sus objetivos de mejora.</h4>
-            </div>
-          </div>
-        </div>
-        <div class="slick_slide--img" style="background-image: url(images/slider/three.jpg);">
           <div class="info">
             <div class="title cl--white txt_size--em4 txt_upper">
               <h2>Laboramos para servite más y mejor!</h2>
@@ -467,39 +467,42 @@
         <div class="row">
           <div class="column column-middle bgc--white">
             <div class="contact_form pd_box--x40">
-              <div class="subtitle subtitle_into--center slate cl--darkblue txt_size--em3 txt_center txt_upper mg_bottom--x20">
+              <div class="subtitle subtitle_into--center slate cl--darkblue txt_size--em3 txt_center txt_upper mg_bottom--x40">
                 <h2>Ingrese su solicitud y en pocos momentos le responderemos</h2>
               </div>
               <form id="contact">
-                <div class="data select error">
-                  <select class="contac_input" id="eco">
-                    <option value="0">Tipo</option>
-                    <option value="1">Domicilio</option>
-                    <option value="2">Queja</option>
-                    <option value="3">Reclamo</option>
-                    <option value="4">Sugerencia</option>
-                    <option value="5">Solicitud</option>
+                <div class="data select">
+                  <select class="contac_input" id="type">
+                    <option value="tipo">Tipo</option>
+                    <option value="domicilio">Domicilio</option>
+                    <option value="queja">Queja</option>
+                    <option value="recalmo">Reclamo</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="solicitud">Solicitud</option>
                   </select>
                 </div>
-                <div class="data fullName error">
-                  <input class="contac_input" type="text" placeholder="Nombre completo">
+                <div class="data fullName">
+                  <input class="contac_input" id="fullName" type="text" placeholder="Nombre completo">
                 </div>
-                <div class="data company error">
-                  <input class="contact_input" type="text" placeholder="Empresa">
+                <div class="data business">
+                  <input class="contact_input" id="business" type="text" placeholder="Empresa">
                 </div>
-                <div class="data city error">
-                  <input class="contact_input" type="text" placeholder="Ciudad">
+                <div class="data city">
+                  <input class="contact_input" id="city" type="text" placeholder="Ciudad">
                 </div>
-                <div class="data phone error">
-                  <input class="contact_input" type="text" placeholder="Teléfono">
+                <div class="data phone">
+                  <input class="contact_input" id="phone" type="text" placeholder="Teléfono">
                 </div>
-                <div class="data email error">
-                  <input class="contact_input" type="email" placeholder="Correo Electronico">
+                <div class="data email">
+                  <input class="contact_input" id="email" type="email" placeholder="Correo Electronico">
                 </div>
-                <div class="data message erro">
-                  <textarea class="contact_input" placeholder="Mensaje:"></textarea>
+                <div class="data message">
+                  <textarea class="contact_input" id="message" placeholder="Mensaje:"></textarea>
                 </div>
-                <button class="btn btn--full btn_site mg_btn" type="submit">Enviar</button>
+                <div class="alerta">
+                  <p></p>
+                </div>
+                <button class="btn btn--full btn_site mg_btn envio" type="submit">Enviar</button>
               </form>
             </div>
           </div>
@@ -554,10 +557,7 @@
         </div>
         <div class="column txt_center mg_bottom--x20">
           <div class="list list_social list--inline">
-            <li><a href="https://www.facebook.com/" target="_blank"><span class="circle circle--min"><i class="icon icon-facebook"></i></span></a></li>
-            <li><a href="https://twitter.com/" target="_blank"><span class="circle circle--min"><i class="icon icon-twitter"></i></span></a></li>
-            <li><a href="https://www.linkedin.com/" target="_blank"><span class="circle circle--min"><i class="icon icon-linkedin"></i></span></a></li>
-            <li><a href="https://www.youtube.com/" target="_blank"><span class="circle circle--min"><i class="icon icon-youtube"></i></span></a></li>
+            <li><a href="https://www.facebook.com/mymlaboratorio/" target="_blank"><span class="circle circle--min"><i class="icon icon-facebook"></i></span></a></li>
           </div>
         </div>
         <div class="column txt_center mg_bottom--x5"><small>© Laboratios M&M Diagnóstico, LTDA, 2017. Todos los derechos reservados</small></div>

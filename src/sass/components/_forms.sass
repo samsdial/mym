@@ -31,21 +31,25 @@ textarea,
 select
     background: $slate
     border: none
-    margin-bottom: 15px
+    margin-bottom: 26px
     padding: 2vh 12px
     text-transform: uppercase
     -webkit-appearance: none
     transition: all 0.3s ease-in-out
-    width: 92%
+    width: 100%
     display: inline-block
     color: $gray
+    border-radius: 0px
     +press
         background-color: rgba($slate, .6)
         outline: none
+    &:focus
+        background-color: rgba($yellow, .6)
 
-select
-    // background:  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="%39657E" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat
-    // padding-right: 3.0rem
+
+.data
+    width: 100%
+    display: flex
 .data.select
     position: relative
     &:after
@@ -60,49 +64,69 @@ select
         color: $blue
         position: absolute
         top: 29%
-        right: 6%
+        right: 2%
     &:focus
         &:after
             color: $slate
 
 textarea
     min-height: 6.5rem
-.data
-    overflow: hidden
 label
     width: 100%
     display: inline-block
     margin-bottom: 15px
     +font-size(3.9)
 
-.name,
-.name--message,
-.data--message
+.select,
+.fullName,
+.business,
+.city,
+.phone,
+.email,
+.message
     &.error
-        label
-            position: relative
-            font-weight: 700
+        position: relative
+        font-weight: 700
+        color: $blue
+        &:before
+            position: absolute
+            top: -17px
+            right: 0
+            font-size: .7em
             color: $blue
-            &:before
-                position: absolute
-                top: 0
-                right: 0
-                font-size: .7em
-                color: red
-                font-weight: 700
-                text-decoration: underline
-.name
+            font-weight: 700
+            text-decoration: underline
+.select
     &.error
-        label
-            &:before
-                content: "Escriba su nombre."
-.name--message
+        &:before
+            content: "Seleccione el tipo de contacto"
+.fullName
     &.error
-        label
-            &:before
-                content: "Escriba su nombre."
-.data--message
+        &:before
+            content: "Escriba el Nombre Completo."
+.business
     &.error
-        label
-            &:before
-                content: "No olvide el mensaje."
+        &:before
+            content: "Escriba la empresa."
+.city
+    &.error
+        &:before
+            content: "Escriba la ciudad donde radica."
+.phone
+    &.error
+        &:before
+            content: "Escriba el numero de contacto."
+.email
+    &.error
+        &:before
+            content: "No olvide el mensaje."
+.message
+    &.error
+        &:before
+            content: "No olvide el mensaje."
+.alerta
+    background-color: $gainsboro
+    padding: 5rem
+    p
+        color: $yellow
+

@@ -263,6 +263,7 @@ $(function(){
                     $('#city').val('');
                     $('#phone').val('');
                     $('#email').val('');
+                    $('#message').val('');
                 }else{
                     $('.alerta').slideDown('slow');
                     $('.alerta p').html('Error, Intente luego.');
